@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="rubrica.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="madre">
+        <div class="login">
+            <div style="width: 100%;margin-left: 19px;">
+                <button style="background-color: rgba(245, 112, 112, 0.851);" class="mini"></button>
+                <button style="background-color: rgba(249, 192, 37, 0.901);" class="mini"></button>
+                <button style="background-color: rgba(35, 249, 35, 0.689);" class="mini"></button>
+            </div>
+            <div class="utente">
+                <img style="border-radius:100% ;" src="./imagini/boy3.png" width="60px" height="60px" alt="">
+                <h5>Varga Keri</h5>
+                <div style=" display: flex; align-items: center; border-radius:50px; position: relative;top: 10px;">
+                    <input oninput="search" id="cerca"
+                        style="font-size: 13px;color:rgb(0, 0, 0);background-color: rgba(255, 255, 255, 0.747);"
+                        class="search" type="search" placeholder="Search">
+
+                </div>
+                <ul>
+                    <li onclick="AllContacts(AllContacts)" class="menu">All Contacts</li>
+                    <li onclick="Friends()" class="menu">Friends</li>
+                    <li onclick="CoWorkers()" class="menu">Co-Workers</li>
+                    <li onclick="Designers()" class="menu">Designers</li>
+                    <li onclick="Developers()" class="menu">Developers</li>
+                    <li onclick="Family()" class="menu">Family</li>
+                </ul>
+
+            </div>
+            <div class="setting">
+                <i style="font-size: 20px;" class="bi bi-gear-wide-connected "></i>
+            </div>
+        </div>
+        <div class="All-Contacts">
+            <div class="list"><!--mijloc-->
+                <div class="verde">
+                    <div>
+                        <h1 id="MenuKeri">All Contacts</h1>
+                    </div>
+
+
+                    <div style="display: flex; ">
+                        <div onclick="doom()" class="edit"> <i style="font-size: 20px; " id="doom"
+                                class="bi bi-pencil-square"></i>
+                        </div>
+                        <div class="add">
+                            <i onclick="sparizione(),DizESC()" style="font-size: 20px; " class="bi bi-person-plus">
+                            </i>
+                        </div>
+                        <div class="order">
+                            <i onclick="" style="font-size: 20px;" class="bi bi-list-ul"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="Container" class="Container">
+                    <!--Add-->
+
+
+                    <div style="display: none;" id="test" class="cardNonSparisci">
+                        <div style="display: flex;align-items: center; width: 100%;">
+
+                            <div id="poter">
+                                <img id="kaka" class="imgCardL" src="./imagini/person_circle_icon_159926.png" alt="">
+
+                            </div>
+
+                            <input style="width: 25vw;" placeholder="Inserisi URL della foto" class="dodo" id="kakaa2"
+                                type="url" name="avatar" w>
+                            <button class="dodo2" onclick="show()">Upload</button>
+                        </div>
+                        <div style="display: flex;margin-bottom: 20px;width: 100%;">
+                            <label style="padding-right: 5px;" for="Nome">Nome:</label>
+                            <input id="nome" 190px;" type="text" name="Nome">
+                            <label style="padding-right: 5px; margin-left: 5px;" for="Cognome">Cognome:</label>
+                            <input id="cogn" 190px;" type="text" name="Cognome">
+                        </div>
+                        <label for="Cita">Cita:</label>
+                        <input id="cita" 190px;" type="text" name="Cita">
+                        <label for="Telefono">Telefono:</label>
+                        <input id="tel" 190px;" type="tel" name="Telefono">
+                        <label for="Email">Email:</label>
+                        <input id="email" type="email" name="Email">
+                        <h6 style="color: #2d313a; margin-top: 20px;"><strong>Note:</strong></h6>
+
+                        <textarea id="NOTE" type="text"
+                            style="color: #2d313a; background-color: rgba(255, 255, 255, 0);height: 100%;height: 150px;width: 100%; resize: none;"></textarea>
+
+                        <button class="save" onclick="save(),DizESC()">Save</button>
+
+                    </div>
+
+
+
+                    <!--ListaCard-->
+                    <div id="cardSparisci" style="display: block;" class="cardSparisci">
+
+
+
+
+
+                    </div>
+                </div>
+                <div style="flex: 0.4;"></div>
+            </div>
+        </div>
+        <div style="display: block;" id="SP" class="baby">
+            <div style="overflow-y:hidden;" id="baby" class="baby2">
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="rubrica.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
